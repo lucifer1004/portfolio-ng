@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "format": "prettier --write *.json *.md src/**/** e2e/**/**",
+    "format": "prettier --write \"*.{json,md}\" \"{src,e2e}/**/*.{js,ts,json,html}\"",
     "e2e": "ng e2e",
     "now-build": "yarn build --optimization=true --prod=true --outputHashing=all && mv dist/portfolio-ng . && rm -r dist && mv portfolio-ng dist"
   },

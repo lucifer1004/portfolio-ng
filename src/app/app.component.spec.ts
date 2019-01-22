@@ -2,12 +2,19 @@ import {TestBed, async} from '@angular/core/testing'
 import {RouterTestingModule} from '@angular/router/testing'
 import {AppComponent} from './app.component'
 import {BlogComponent} from './blog/blog.component'
+import {BlogItemComponent} from './blog-item/blog-item.component'
+import {BlogListComponent} from './blog-list/blog-list.component'
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AppComponent, BlogComponent],
+      declarations: [
+        AppComponent,
+        BlogComponent,
+        BlogItemComponent,
+        BlogListComponent,
+      ],
     }).compileComponents()
   }))
 
