@@ -1,7 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
   <h1>Welcome to {{ title }}!</h1>
-  <app-blog></app-blog>
   <app-blog-list></app-blog-list>
+  <form class="ui large form segment">
+    <h3 class="ui header">Add a Post</h3>
+    <div class="field">
+      <label for="title">Title:</label>
+      <textarea name="title" id="title" rows="1" cols="20" #newtitle></textarea>
+    </div>
+    <div class="field">
+      <label for="content">Content:</label>
+      <textarea name="content" id="content" rows="6" cols="20" #newcontent></textarea>
+    </div>
+  </form>
+  <button
+    (click)="addArticle(newtitle, newcontent)"
+    class="ui positive right floated button"
+  >
+    Submit link
+  </button>
   <router-outlet></router-outlet>
 </div>

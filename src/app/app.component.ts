@@ -7,4 +7,10 @@ import {Component} from '@angular/core'
 })
 export class AppComponent {
   title = 'portfolio-ng'
+  addArticle(title: HTMLInputElement, content: HTMLInputElement): boolean {
+    console.log(
+      `Adding post title: ${title.value} and content: ${content.value}`,
+    )
+    return false
+  }
 }
