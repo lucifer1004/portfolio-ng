@@ -2,8 +2,5 @@
   "name": "portfolio-ng",
   "alias": "portfolio-ng.gabriel-wu.com",
   "version": 2,
-  "builds": [{"src": "package.json", "use": "@now/static-build"}],
-  "engines": {
-    "node": "^10.7.0"
-  }
+  "builds": [{"src": "package.json", "use": "@now/static-build"}]
 }
